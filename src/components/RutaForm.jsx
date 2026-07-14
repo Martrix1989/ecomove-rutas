@@ -52,7 +52,10 @@ export default function RutaForm({ rutaEnEdicion, rutas, onGuardar, onCancelarEd
       nuevosErrores.distancia = 'La distancia debe ser mayor que 0.';
     }
     if (!form.puntoEncuentro.trim()) {
-      nuevosErrores.puntoEncuentro = 'El punto de encuentro es obligatorio.';
+      nuevosErrores.puntoEncuentro = 'El punto de encuentro es obligatorio.'
+      } else if (form.puntoEncuentro.trim().length < 5) {
+        nuevosErrores.puntoEncuentro = 'El punto de encuentro debe tener al menos 5 caracteres.';
+      }
     }
     if (!form.responsable.trim()) {
       nuevosErrores.responsable = 'El responsable es obligatorio.';
