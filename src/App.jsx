@@ -77,7 +77,7 @@ export default function App() {
               <div className="card-body">
                 <i class="bi bi-person-walking display-6"></i>
                 <p className="text-muted mb-1 small">Rutas registradas</p>
-                <p className="h4 mb-0">{rutas.length}</p>
+                <p className="h4 mb-0 px-2">{rutas.length}</p>
               </div>
             </div>
           </div>
@@ -86,7 +86,7 @@ export default function App() {
               <div className="card-body">
                 <i class="bi bi-clipboard2-check display-6"></i>
                 <p className="text-muted mb-1 small">Activas</p>
-                <p className="h4 mb-0 text-success">{totalActivas}</p>
+                <p className="h4 mb-0 text-success px-2">{totalActivas}</p>
               </div>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function App() {
               <div className="card-body">
                 <i class="bi bi-clipboard2-x display-6"></i>
                 <p className="text-muted mb-1 small">Finalizadas</p>
-                <p className="h4 mb-0 text-danger">{totalFinalizadas}</p>
+                <p className="h4 mb-0 text-danger px-2">{totalFinalizadas}</p>
               </div>
             </div>
           </div>

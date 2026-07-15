@@ -60,6 +60,8 @@ export default function RutaForm({ rutaEnEdicion, rutas, onGuardar, onCancelarEd
       nuevosErrores.responsable = 'El responsable es obligatorio.';
     } else if (form.responsable.trim().length < 3) {
       nuevosErrores.responsable = 'El responsable debe tener al menos 3 caracteres.';
+    } else if (form.responsable.trim().match(/\d/)) {
+      nuevosErrores.responsable = 'El responsable no puede contener números.';
     }
     if (!form.estado) {
       nuevosErrores.estado = 'Selecciona un estado.';
