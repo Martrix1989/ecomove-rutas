@@ -10,3 +10,7 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+
+
+/* Hecho por Martin Arias y Jorge Fernandez 
+ lo queremos profe, suerte en su paternidad */
